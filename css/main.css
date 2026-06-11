@@ -1,0 +1,147 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f5f2;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* ── Navigasjon ── */
+nav {
+  background: #1a3a2a;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav .logo { font-size: 1.1rem; font-weight: 600; color: #e8f5e9; text-decoration: none; }
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav ul a { color: #a5d6a7; text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+nav ul a:hover { color: #e8f5e9; }
+
+main { min-height: 80vh; }
+
+footer {
+  background: #1a3a2a;
+  color: #a5d6a7;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  margin-top: 3rem;
+}
+footer a { color: #81c784; }
+
+/* ── Forside ── */
+.hero {
+  background: linear-gradient(135deg, #1a3a2a 0%, #2d5a3d 60%, #1a4a3a 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #e8f5e9;
+}
+.hero .kicker { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: #81c784; margin-bottom: 0.75rem; }
+.hero h1 { font-size: 2rem; font-weight: 600; margin-bottom: 0.75rem; }
+.hero p { font-size: 1rem; color: #a5d6a7; max-width: 520px; margin: 0 auto; }
+
+.section { max-width: 1000px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+.section-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #888; margin-bottom: 1.25rem; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); transform: translateY(-2px); }
+
+.card-img { height: 140px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+.card-img.klima { background: linear-gradient(135deg, #1565c0, #1976d2); }
+.card-img.natur { background: linear-gradient(135deg, #2e7d32, #388e3c); }
+.card-img.losning { background: linear-gradient(135deg, #e65100, #f57c00); }
+
+.card-body { padding: 1rem 1.2rem; }
+.card-kategori { font-size: 0.72rem; color: #888; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+.card-tittel { font-size: 1rem; font-weight: 600; margin-bottom: 6px; line-height: 1.3; }
+.card-ingress { font-size: 0.85rem; color: #555; line-height: 1.6; }
+
+/* ── Seksjonsliste ── */
+.liste-wrapper { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+.liste-header { margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid #2e7d32; }
+.liste-header h1 { font-size: 1.7rem; font-weight: 700; color: #1a3a2a; }
+.liste-header p { color: #555; margin-top: 0.4rem; }
+
+.artikkel-liste { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.artikkel-rad {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s;
+}
+.artikkel-rad:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+.artikkel-rad-bilde {
+  background: linear-gradient(135deg, #2e7d32, #388e3c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  min-height: 100px;
+}
+.artikkel-rad-body { padding: 1rem 1.25rem; }
+.artikkel-rad-meta { font-size: 0.75rem; color: #888; margin-bottom: 4px; }
+.artikkel-rad-tittel { font-size: 1rem; font-weight: 600; margin-bottom: 5px; color: #1a1a1a; }
+.artikkel-rad-ingress { font-size: 0.85rem; color: #555; line-height: 1.6; }
+
+/* ── Artikkelside ── */
+.artikkel-wrapper { max-width: 780px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+.breadcrumb { font-size: 0.8rem; color: #888; margin-bottom: 1.5rem; }
+.breadcrumb a { color: #2e7d32; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+
+.artikkel-header { margin-bottom: 2rem; }
+.artikkel-kategori { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #2e7d32; font-weight: 600; margin-bottom: 0.5rem; }
+.artikkel-tittel { font-size: 1.9rem; font-weight: 700; line-height: 1.25; margin-bottom: 0.75rem; color: #1a1a1a; }
+.artikkel-meta { font-size: 0.82rem; color: #888; }
+
+.artikkel-bilde { width: 100%; border-radius: 10px; overflow: hidden; margin-bottom: 2rem; background: linear-gradient(135deg, #1565c0, #1976d2); height: 280px; display: flex; align-items: center; justify-content: center; font-size: 5rem; }
+
+.artikkel-ingress { font-size: 1.1rem; color: #444; line-height: 1.75; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0; font-style: italic; }
+
+.artikkel-innhold h2 { font-size: 1.3rem; font-weight: 600; margin: 2rem 0 0.75rem; color: #1a3a2a; }
+.artikkel-innhold h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.5rem; color: #2d5a3d; }
+.artikkel-innhold p { margin-bottom: 1.2rem; color: #333; }
+.artikkel-innhold ul, .artikkel-innhold ol { margin: 0 0 1.2rem 1.5rem; color: #333; }
+.artikkel-innhold li { margin-bottom: 0.4rem; }
+.artikkel-innhold strong { color: #1a3a2a; }
+.artikkel-innhold blockquote { border-left: 4px solid #2e7d32; background: #f1f8f2; padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; color: #2d5a3d; font-style: italic; }
+
+/* ── Tags ── */
+.tags { display: flex; gap: 6px; flex-wrap: wrap; margin: 1rem 0; }
+.tag { font-size: 0.72rem; background: #e8f5e9; color: #2e7d32; padding: 2px 10px; border-radius: 20px; text-decoration: none; }
+.tag:hover { background: #c8e6c9; }
+
+.nav-artikkel { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e0e0e0; font-size: 0.88rem; }
+.nav-artikkel a { color: #2e7d32; text-decoration: none; }
+.nav-artikkel a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  nav { flex-direction: column; height: auto; padding: 0.75rem 1rem; gap: 0.5rem; }
+  nav ul { gap: 1rem; flex-wrap: wrap; }
+  .artikkel-rad { grid-template-columns: 1fr; }
+  .artikkel-rad-bilde { height: 80px; }
+}

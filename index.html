@@ -1,414 +1,101 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="nb">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miljøbibliotek</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            display: flex;
-            height: 100vh;
-        }
-
-        .sidebar {
-            width: 280px;
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            overflow-y: auto;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-        }
-
-        .sidebar h1 {
-            font-size: 24px;
-            margin-bottom: 30px;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 15px;
-        }
-
-        .nav-menu {
-            list-style: none;
-        }
-
-        .nav-item {
-            margin-bottom: 10px;
-        }
-
-        .nav-link {
-            display: block;
-            padding: 12px 15px;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            background-color: #34495e;
-        }
-
-        .nav-link:hover {
-            background-color: #3498db;
-            transform: translateX(5px);
-        }
-
-        .nav-link.active {
-            background-color: #3498db;
-            font-weight: bold;
-        }
-
-        .main-content {
-            flex: 1;
-            padding: 40px;
-            overflow-y: auto;
-            background-color: white;
-        }
-
-        .content-section {
-            display: none;
-        }
-
-        .content-section.active {
-            display: block;
-            animation: fadeIn 0.3s ease;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            color: #34495e;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-
-        p {
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 15px;
-        }
-
-        ul, ol {
-            margin-left: 30px;
-            margin-bottom: 15px;
-        }
-
-        li {
-            margin-bottom: 8px;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        strong {
-            color: #2c3e50;
-            font-weight: 600;
-        }
-
-        .info-box {
-            background-color: #ecf0f1;
-            border-left: 4px solid #3498db;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-
-        .home-content {
-            text-align: center;
-        }
-
-        .home-content h1 {
-            font-size: 48px;
-            margin-bottom: 30px;
-        }
-
-        .home-content p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                width: 100%;
-                height: auto;
-            }
-
-            .main-content {
-                padding: 20px;
-            }
-
-            .home-content h1 {
-                font-size: 32px;
-            }
-        }
-    </style>
+	<meta name="generator" content="Hugo 0.163.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miljøkrise</title>
+  <meta name="description" content="Artikler om klimaendringer, naturkrise og løsninger — basert på forskning, formidlet for alle.">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <nav class="sidebar">
-        <h1>🌍 Miljøbibliotek</h1>
-        
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#" class="nav-link active" data-section="home">🏠 Hjem</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link" data-section="natur">🌿 Naturkrisen</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link" data-section="historikk">📚 Historikk</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link" data-section="klima">🌡️ Klimaendringer</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link" data-section="tiltak">♻️ Tiltak</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link" data-article="artikler/natur/biodiversitet.txt" data-title="Biodiversitet">📄 Biodiversitet</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link" data-article="artikler/klima/global-oppvarming.txt" data-title="Global oppvarming">📄 Global oppvarming</a>
-            </li>
-        </ul>
-    </nav>
+  <nav>
+    <a href="/" class="logo">Miljøkrise</a>
+    <ul>
+      
+        <li><a href="/klima/">Klima</a></li>
+      
+        <li><a href="/natur/">Natur</a></li>
+      
+        <li><a href="/losninger/">Løsninger</a></li>
+      
+        <li><a href="/om/">Om siden</a></li>
+      
+    </ul>
+  </nav>
 
-    <div class="main-content">
-        <section id="home" class="content-section active">
-            <div class="home-content">
-                <h1>🌍 Miljøbibliotek</h1>
-                <p>Velkommen til ditt miljøbibliotek</p>
-                <p>Her finner du informasjon om miljøutfordringer, klima og naturvern.</p>
-                <p>Velg et tema fra menyen til venstre for å komme i gang.</p>
-            </div>
-        </section>
+  <main>
+    
 
-        <section id="natur" class="content-section">
-            <h1>🌿 Naturkrisen</h1>
-            <p>Naturkrisen refererer til det raske tapet av biologisk mangfold verden over. Vi mister arter i et tempo som aldri før i menneskehetens historie.</p>
-            
-            <h2>Hva er naturkrisen?</h2>
-            <p>Naturkrisen omfatter flere alvorlige utfordringer:</p>
-            <ul>
-                <li><strong>Tap av arter</strong> - 1 million arter er truet av utryddelse</li>
-                <li><strong>Habitatødeleggelse</strong> - 75% av landområdene er vesentlig endret</li>
-                <li><strong>Økosystemkollaps</strong> - Økosystemer blir fragmentert og svekkede</li>
-            </ul>
+<div class="hero">
+  <div class="kicker">Miljøkrise</div>
+  <h1>Forstå krisen. Finn løsningene.</h1>
+  <p>Artikler om klimaendringer, naturkrise og hva vi kan gjøre — basert på forskning, formidlet for alle.</p>
+</div>
 
-            <h2>Hovedårsaker</h2>
-            <ul>
-                <li>Avskoging og jordbruksendringer</li>
-                <li>Forurensning</li>
-                <li>Klimaendringer</li>
-                <li>Overjakt og overbeskatning</li>
-                <li>Invasive arter</li>
-            </ul>
+<div class="section">
+  <div class="section-title">Kategorier</div>
+  <div class="cards">
+    <a href="/klima/" class="card">
+      <div class="card-img klima">🌡️</div>
+      <div class="card-body">
+        <div class="card-kategori">Tema</div>
+        <div class="card-tittel">Klimaendringer</div>
+        <div class="card-ingress">Global oppvarming, Paris-avtalen og konsekvensene for planeten.</div>
+        <div class="tags"><span class="tag">klima</span><span class="tag">oppvarming</span></div>
+      </div>
+    </a>
+    <a href="/natur/" class="card">
+      <div class="card-img natur">🌿</div>
+      <div class="card-body">
+        <div class="card-kategori">Tema</div>
+        <div class="card-tittel">Naturkrisen</div>
+        <div class="card-ingress">Tap av arter, habitatødeleggelse og biologisk mangfold.</div>
+        <div class="tags"><span class="tag">natur</span><span class="tag">arter</span></div>
+      </div>
+    </a>
+    <a href="/losninger/" class="card">
+      <div class="card-img losning">💡</div>
+      <div class="card-body">
+        <div class="card-kategori">Tema</div>
+        <div class="card-tittel">Løsninger</div>
+        <div class="card-ingress">Konkrete tiltak — fra individuelle valg til politisk handling.</div>
+        <div class="tags"><span class="tag">tiltak</span><span class="tag">energi</span></div>
+      </div>
+    </a>
+  </div>
+</div>
 
-            <h2>Konsekvenser</h2>
-            <p>Tapet av biodiversitet truer menneskehetens overlevelse fordi:</p>
-            <ul>
-                <li>Pollinering av avlinger avhenger av insekter</li>
-                <li>Fisk og dyr er viktige mattilganger</li>
-                <li>Skog regulerer klima og vannkretslopen</li>
-                <li>Medisiner kommer fra naturlige kilder</li>
-            </ul>
-        </section>
 
-        <section id="historikk" class="content-section">
-            <h1>📚 Historikk</h1>
-            <p>Forståelsen av miljøproblemer har utviklet seg gradvis over de siste tiårene.</p>
+<div class="section" style="padding-top: 0;">
+  <div class="section-title">Siste artikler</div>
+  <div class="cards">
+    
+    <a href="https://goebel.no/natur/biodiversitet/" class="card">
+      <div class="card-body">
+        <div class="card-kategori">Natur</div>
+        <div class="card-tittel">Biodiversitet</div>
+        <div class="card-ingress"><p>Biologisk mangfold, eller biodiversitet, refererer til variasjonen av liv på jorden - fra gener til …</p></div>
+      </div>
+    </a>
+    
+    <a href="https://goebel.no/klima/global-oppvarming/" class="card">
+      <div class="card-body">
+        <div class="card-kategori">Klima</div>
+        <div class="card-tittel">Global oppvarming</div>
+        <div class="card-ingress"><p>Global oppvarming er resultatet av den såkalte <strong>drivhuseffekten</strong>. Klimagasser i atmosfæren (som CO2, …</p></div>
+      </div>
+    </a>
+    
+  </div>
+</div>
 
-            <h2>Viktige milepæler</h2>
-            <ul>
-                <li><strong>1960-tallet:</strong> Rachel Carson publiserer "Silent Spring" - første advarsel om pestisider</li>
-                <li><strong>1970-tallet:</strong> Første jordens dag i 1970, FN etablerer UNEP</li>
-                <li><strong>1987:</strong> Montreal-protokollen om ozonlaget</li>
-                <li><strong>1992:</strong> Rio-konferansen og CBD - konvensjonen om biologisk mangfold</li>
-                <li><strong>1997:</strong> Kyoto-protokollen om klimaendringer</li>
-                <li><strong>2015:</strong> Paris-avtalen om å begrense global oppvarming</li>
-                <li><strong>2022:</strong> Kunming-Montreal-avtalen for biologisk mangfold</li>
-            </ul>
 
-            <h2>Fra passivitet til handling</h2>
-            <p>I dag er miljøspørsmål høyt på den politiske agendaen. Mange land har satt ambisiøse klimamål og naturvmål, selv om implementeringen fortsatt er en utfordring.</p>
-        </section>
 
-        <section id="klima" class="content-section">
-            <h1>🌡️ Klimaendringer</h1>
-            <p>Klimaendringer er en av vår tids største utfordringer. Jordens gjennomsnittlige temperatur stiger på grunn av menneskeskapte utslipp av klimagasser.</p>
+  </main>
 
-            <h2>Drivhuseffekten</h2>
-            <p>Klimagasser som CO2, metan og lystgass fanger solvarmen i atmosfæren, som glass i et drivhus. Siden industrialiseringen har CO2-nivået økt med 50%.</p>
-
-            <h2>Konsekvenser</h2>
-            <ul>
-                <li>Issmeltning og havnivåstigning</li>
-                <li>Hyppigere ekstremvær (stormer, flom, tørke)</li>
-                <li>Endringer i plantevekst og dyrehabitat</li>
-                <li>Matsikkerhetsproblemer</li>
-                <li>Helseproblemer fra hetebølger</li>
-            </ul>
-
-            <h2>Paris-avtalen</h2>
-            <p>I 2015 vedtok 196 land Paris-avtalen som tar sikte på:</p>
-            <ul>
-                <li>Holde global oppvarming under 2°C, helst 1,5°C</li>
-                <li>Nå nullutslipp innen 2050</li>
-                <li>Hjelpe utviklingsland med klimatilpasning</li>
-            </ul>
-        </section>
-
-        <section id="tiltak" class="content-section">
-            <h1>♻️ Tiltak for miljøet</h1>
-            <p>Det finnes mange konkrete tiltak vi kan gjøre på individuelt og samfunnsmessig nivå.</p>
-
-            <h2>Individuelle tiltak</h2>
-            <ul>
-                <li><strong>Transport:</strong> Bruk mindre bil, gå, sykkel eller kollektiv</li>
-                <li><strong>Energi:</strong> Sparer strøm, velg fornybar energi om mulig</li>
-                <li><strong>Mat:</strong> Reduser kjøttkonsum, kjøp lokalt og økologisk</li>
-                <li><strong>Forbruk:</strong> Kjøp mindre, velg kvalitet over kvantitet</li>
-                <li><strong>Avfall:</strong> Sorter søppel, gjenbruk og resirkuler</li>
-            </ul>
-
-            <h2>Samfunnsmessige tiltak</h2>
-            <ul>
-                <li>Overgang til fornybar energi (sol, vind, vann)</li>
-                <li>Bedre kollektivtransport</li>
-                <li>Vern av naturområder og nasjonalparker</li>
-                <li>Strengere klimapolitikk og regulering</li>
-                <li>Investering i grønn teknologi</li>
-                <li>Internasjonalt samarbeid</li>
-            </ul>
-
-            <h2>Håp for fremtiden</h2>
-            <p>Det er mulig å løse miljøkrisen hvis vi handler nå. Hver handling teller, enten det er personlig eller politisk. Fremtiden avhenger av de valgene vi gjør i dag.</p>
-        </section>
-
-        <section id="article" class="content-section">
-            <div id="article-content"></div>
-        </section>
-    </div>
-
-    <script>
-        // Funksjon for å konvertere Markdown-stil tekst til HTML
-        function renderMarkdown(text) {
-            let html = '';
-            const lines = text.split('\n');
-            
-            for (let i = 0; i < lines.length; i++) {
-                let line = lines[i].trim();
-                
-                if (!line) {
-                    if (html && !html.endsWith('</ul>') && !html.endsWith('</ol>')) {
-                        html += '<br>';
-                    }
-                    continue;
-                }
-
-                // Håndter overskrifter
-                if (line.startsWith('# ')) {
-                    html += `<h1>${line.substring(2)}</h1>`;
-                } else if (line.startsWith('## ')) {
-                    html += `<h2>${line.substring(3)}</h2>`;
-                } else if (line.startsWith('### ')) {
-                    html += `<h3>${line.substring(4)}</h3>`;
-                } 
-                // Håndter nummererte lister
-                else if (/^\d+\./.test(line)) {
-                    line = line.replace(/^(\d+\.\s*)/, '');
-                    // Konverter ** til <strong>
-                    line = line.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-                    html += `<li>${line}</li>`;
-                }
-                // Håndter punktlister
-                else if (line.startsWith('- ')) {
-                    line = line.substring(2);
-                    // Konverter ** til <strong>
-                    line = line.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-                    html += `<li>${line}</li>`;
-                }
-                // Håndter vanlig tekst
-                else {
-                    // Konverter ** til <strong>
-                    line = line.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-                    html += `<p>${line}</p>`;
-                }
-            }
-            
-            // Wrap lister i <ul> tags
-            html = html.replace(/(<li>.*?<\/li>)/gs, (match) => {
-                if (!match.startsWith('<ul>')) {
-                    return '<ul>' + match + '</ul>';
-                }
-                return match;
-            });
-            
-            return html;
-        }
-
-        // Håndter navigasjonslenker
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Fjern active-klasse fra alle lenker
-                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
-
-                // Sjekk om det er artikkellenke
-                if (this.dataset.article) {
-                    loadArticle(this.dataset.article, this.dataset.title);
-                } else {
-                    // Vanlig seksjon
-                    const section = this.dataset.section;
-                    showSection(section);
-                }
-            });
-        });
-
-        function showSection(sectionId) {
-            // Skjul alle seksjoner
-            document.querySelectorAll('.content-section').forEach(section => {
-                section.classList.remove('active');
-            });
-            
-            // Vis valgt seksjon
-            document.getElementById(sectionId).classList.add('active');
-        }
-
-        function loadArticle(filePath, title) {
-            fetch(filePath)
-                .then(response => response.text())
-                .then(content => {
-                    const contentDiv = document.getElementById('article-content');
-                    contentDiv.innerHTML = `<h1>${title}</h1>` + renderMarkdown(content);
-                    showSection('article');
-                })
-                .catch(error => {
-                    document.getElementById('article-content').innerHTML = 
-                        `<p style="color: red;">Feil: Kunne ikke laste artikkel fra ${filePath}</p><p>Kontroller at filen finnes i riktig mappe.</p>`;
-                    showSection('article');
-                });
-        }
-    </script>
+  <footer>
+    <p>Miljøkrise — Øystein Hillestad &nbsp;|&nbsp; Drevet av <a href="https://gohugo.io">Hugo</a></p>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on Miljøkrise</title>
+		<link>https://goebel.no/tags/</link>
+		<description>Recent content in Tags on Miljøkrise</description>
+		<generator>Hugo</generator>
+		<language>nb</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://goebel.no/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Arter</title>
+				<link>https://goebel.no/tags/arter/</link>
+				<pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://goebel.no/tags/arter/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Biodiversitet</title>
+				<link>https://goebel.no/tags/biodiversitet/</link>
+				<pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://goebel.no/tags/biodiversitet/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Klima</title>
+				<link>https://goebel.no/tags/klima/</link>
+				<pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://goebel.no/tags/klima/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Natur</title>
+				<link>https://goebel.no/tags/natur/</link>
+				<pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://goebel.no/tags/natur/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Naturkrise</title>
+				<link>https://goebel.no/tags/naturkrise/</link>
+				<pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://goebel.no/tags/naturkrise/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Oppvarming</title>
+				<link>https://goebel.no/tags/oppvarming/</link>
+				<pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://goebel.no/tags/oppvarming/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Paris-Avtalen</title>
+				<link>https://goebel.no/tags/paris-avtalen/</link>
+				<pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://goebel.no/tags/paris-avtalen/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>
