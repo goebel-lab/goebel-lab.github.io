@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://goebel.no/klima/global-oppvarming/</loc>
+    <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://goebel.no/klima/klimagasser-og-kilder/</loc>
+    <lastmod>2026-06-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://goebel.no/tags/co2/</loc>
     <lastmod>2026-06-12T00:00:00+00:00</lastmod>
   </url><url>
@@ -12,9 +18,6 @@
     <lastmod>2026-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goebel.no/tags/klimagasser/</loc>
-    <lastmod>2026-06-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goebel.no/klima/klimagasser-og-kilder/</loc>
     <lastmod>2026-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goebel.no/tags/metan/</loc>
@@ -33,9 +36,6 @@
     <lastmod>2026-06-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goebel.no/tags/biodiversitet/</loc>
-    <lastmod>2026-06-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goebel.no/klima/global-oppvarming/</loc>
     <lastmod>2026-06-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goebel.no/tags/natur/</loc>
