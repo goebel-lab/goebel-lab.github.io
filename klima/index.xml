@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://goebel.no/klima/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Klimagasser og deres kilder</title>
+				<link>https://goebel.no/klima/klimagasser-og-kilder/</link>
+				<pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://goebel.no/klima/klimagasser-og-kilder/</guid>
+				<description>&lt;p&gt;Klimagasser fanget i atmosfæren holder på varme fra solen — akkurat som glasset i et drivhus. Noen gasser er langt kraftigere enn andre, og de kommer fra svært ulike kilder.&lt;/p&gt;&#xA;&lt;h2 id=&#34;de-viktigste-klimagassene&#34;&gt;De viktigste klimagassene&lt;/h2&gt;&#xA;&lt;h3 id=&#34;co2--karbondioksid&#34;&gt;CO2 — karbondioksid&lt;/h3&gt;&#xA;&lt;p&gt;CO2 er den klimagassen vi slipper ut mest av. Den dannes når vi forbrenner kull, olje og gass, og når vi hogger ned skog. CO2 brytes sakte ned i atmosfæren — en del av det vi slipper ut i dag vil fortsatt varme kloden om 1000 år.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Global oppvarming</title>
 				<link>https://goebel.no/klima/global-oppvarming/</link>

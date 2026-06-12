@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Klima on Miljøbiblioteket</title>
-		<link>https://goebel.no/tags/klima/</link>
-		<description>Recent content in Klima on Miljøbiblioteket</description>
+		<title>Klimagasser on Miljøbiblioteket</title>
+		<link>https://goebel.no/tags/klimagasser/</link>
+		<description>Recent content in Klimagasser on Miljøbiblioteket</description>
 		<generator>Hugo</generator>
 		<language>nb</language>
 		
@@ -12,20 +12,13 @@
 		
 			<lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://goebel.no/tags/klima/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://goebel.no/tags/klimagasser/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Klimagasser og deres kilder</title>
 				<link>https://goebel.no/klima/klimagasser-og-kilder/</link>
 				<pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
 				<guid>https://goebel.no/klima/klimagasser-og-kilder/</guid>
 				<description>&lt;p&gt;Klimagasser fanget i atmosfæren holder på varme fra solen — akkurat som glasset i et drivhus. Noen gasser er langt kraftigere enn andre, og de kommer fra svært ulike kilder.&lt;/p&gt;&#xA;&lt;h2 id=&#34;de-viktigste-klimagassene&#34;&gt;De viktigste klimagassene&lt;/h2&gt;&#xA;&lt;h3 id=&#34;co2--karbondioksid&#34;&gt;CO2 — karbondioksid&lt;/h3&gt;&#xA;&lt;p&gt;CO2 er den klimagassen vi slipper ut mest av. Den dannes når vi forbrenner kull, olje og gass, og når vi hogger ned skog. CO2 brytes sakte ned i atmosfæren — en del av det vi slipper ut i dag vil fortsatt varme kloden om 1000 år.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Global oppvarming</title>
-				<link>https://goebel.no/klima/global-oppvarming/</link>
-				<pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>https://goebel.no/klima/global-oppvarming/</guid>
-				<description>&lt;p&gt;Global oppvarming er resultatet av den såkalte &lt;strong&gt;drivhuseffekten&lt;/strong&gt;. Klimagasser i atmosfæren (som CO2, metan og lystgass) fanger opp varme fra solen og holder den nær jordoverflaten - akkurat som glass i et drivhus.&lt;/p&gt;&#xA;&lt;h2 id=&#34;hva-er-global-oppvarming&#34;&gt;Hva er global oppvarming?&lt;/h2&gt;&#xA;&lt;p&gt;Global oppvarming er resultatet av den såkalte &lt;strong&gt;drivhuseffekten&lt;/strong&gt;. Klimagasser i atmosfæren (som CO2, metan og lystgass) fanger opp varme fra solen og holder den nær jordoverflaten - akkurat som glass i et drivhus.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>
